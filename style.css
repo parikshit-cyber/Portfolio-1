@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: white;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    animation: fadeIn 3s ease-in-out;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: #dcdcdc;
+}
+
+.notify-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1rem;
+    background-color: #61dafb;
+    color: #282c34;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+    animation: bounce 2s infinite;
+}
+
+.notify-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Fade-in effect for container */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Bounce animation for button */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
